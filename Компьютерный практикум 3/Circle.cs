@@ -53,8 +53,19 @@ namespace Компьютерный_практикум_3
         /// </summary>
         public override void Print()
         {
+            base.Print();
+            Console.WriteLine($"Радиус круга: {r}");
+        }
+        /// <summary>
+        /// Метод, с помощью которого мы вводим информацию о фигуре 
+        /// </summary>
+        /// <returns></returns>
+        static public Circle Show()
+        {
+            string name = "круг";
             Console.Write("Введите радиус круга: ");
             int r = Convert.ToInt32(Console.ReadLine());
+            return new Circle(name, r);
         }
     }
 }

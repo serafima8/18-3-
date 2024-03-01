@@ -15,31 +15,44 @@ namespace Компьютерный_практикум_3
             {
                 Console.Write("Введите фигуру: ");
                 string name = Console.ReadLine();
-                switch (name)
+                switch (name.ToLower())
                 {
                     case "прямоугольник":
-                        Figure rct = new Rectangle();
-                        rct.Print();
-                        Console.WriteLine($"Площадь прямоугольника: {rct.Area()}");
-                        Console.WriteLine($"Периметр прямоугольника: {rct.Perimeter()}");
+                        Rectangle rct = new Rectangle();
+                        figures.Add(Rectangle.Show());
+                        foreach (var elem in figures)
+                        {
+                            elem.Print();
+                            Console.WriteLine($"Площадь прямоугольника: {elem.Area()}");
+                            Console.WriteLine($"Периметр прямоугольника: {elem.Perimeter()}");
+                        }
                         break;
                     case "квадрат":
-                        Figure sqr = new Square();
-                        sqr.Print();
-                        Console.WriteLine($"Площадь квадрата: {sqr.Area()}");
-                        Console.WriteLine($"Периметр квадрата: {sqr.Perimeter()}");
+                        Square sqr = new Square();
+                        figures.Add(Square.Show());
+                        foreach (var elem in figures)
+                        {
+                            Console.WriteLine($"Площадь квадрата: {elem.Area()}");
+                            Console.WriteLine($"Периметр квадрата: {elem.Perimeter()}");
+                        }
                         break;
                     case "треугольник":
-                        Figure tng = new Triangle();
-                        tng.Print();
-                        Console.WriteLine($"Площадь треугольника: {tng.Area()}");
-                        Console.WriteLine($"Периметр треугольника: {tng.Perimeter()}")
+                        Triangle tng = new Triangle();
+                        figures.Add(Triangle.Show());
+                        foreach (var elem in figures)
+                        {
+                            Console.WriteLine($"Площадь треугольника: {elem.Area()}");
+                            Console.WriteLine($"Периметр треугольника: {elem.Perimeter()}");
+                        }
                         break;
                     case "круг":
-                        Figure crc = new Circle();
-                        crc.Print();
-                        Console.WriteLine($"Площадь круга: {crc.Area()}");
-                        Console.WriteLine($"Периметр круга: {crc.Perimeter()}");
+                        Circle crc = new Circle();
+                        figures.Add(Circle.Show());
+                        foreach (var elem in figures)
+                        {
+                            Console.WriteLine($"Площадь круга: {elem.Area()}");
+                            Console.WriteLine($"Периметр круга: {elem.Perimeter()}");
+                        }
                         break;
                     case "0":return;
                     default:Console.WriteLine("Фигуры не существует");

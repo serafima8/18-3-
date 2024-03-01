@@ -30,14 +30,14 @@ namespace Компьютерный_практикум_3
         /// <summary>
         /// Конструктор по умолчанию
         /// </summary>
-        private Rectangle() { }
+        public Rectangle() { }
         /// <summary>
         /// Конструктор с параметрами 
         /// </summary>
         /// <param name="name"></param>
         /// <param name="side1"></param>
         /// <param name="side2"></param>
-        private Rectangle(string name, double side1, double side2) : base(name)
+        public Rectangle(string name, double side1, double side2) : base(name)
         {
             this.side1 = side1;
             this.side2 = side2;
@@ -63,10 +63,21 @@ namespace Компьютерный_практикум_3
         /// </summary>
         public override void Print()
         {
+            base.Print();
+            Console.WriteLine($"Первая сторона: {side1}\nВторая сторона: {side2}");
+        }
+        /// <summary>
+        /// Метод, с помощью которого мы вводим информацию о фигуре 
+        /// </summary>
+        /// <returns></returns>
+        static public Rectangle Show()
+        {
+            string name = "прямоугольник";
             Console.Write("Введите первую сторону: ");
             int side1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите вторую сторону: ");
             int side2 = Convert.ToInt32(Console.ReadLine());
+            return new Rectangle(name,side1, side2);
         }
     }
 }

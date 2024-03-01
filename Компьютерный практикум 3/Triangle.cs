@@ -82,12 +82,23 @@ namespace Компьютерный_практикум_3
         /// </summary>
         public override void Print()
         {
+            base.Print();
+            Console.WriteLine($"Первая сторона: {side1}\nВторая сторона: {side2}\nТретья сторона: {side3}");
+        }
+        /// <summary>
+        /// Метод, с помощью которого мы вводим информацию о фигуре 
+        /// </summary>
+        /// <returns></returns>
+        static public Triangle Show()
+        {
+            string name = "треугольник";
             Console.Write("Введите первую сторону: ");
             int side1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите вторую сторону: ");
             int side2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите третью сторону: ");
             int side3 = Convert.ToInt32(Console.ReadLine());
+            return new Triangle(name, side1, side2, side3);
         }
     }
 }

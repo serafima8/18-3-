@@ -5,3 +5,10 @@ D:\Основы наследования\Компьютерный практик
 D:\Основы наследования\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.csproj.CoreCompileInputs.cache
 D:\Основы наследования\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.exe
 D:\Основы наследования\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.pdb
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\bin\Debug\Компьютерный практикум 3.exe.config
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\bin\Debug\Компьютерный практикум 3.exe
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\bin\Debug\Компьютерный практикум 3.pdb
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.csproj.AssemblyReference.cache
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.csproj.CoreCompileInputs.cache
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.exe
+C:\Users\Kab-35-6\Desktop\Компьютерный практикум 3\obj\Debug\Компьютерный практикум 3.pdb

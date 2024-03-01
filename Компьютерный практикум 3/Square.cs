@@ -56,5 +56,16 @@ namespace Компьютерный_практикум_3
             Console.Write("Введите сторону: ");
             int side1 = Convert.ToInt32(Console.ReadLine());
         }
+        /// <summary>
+        /// Метод, с помощью которого мы вводим информацию о фигуре 
+        /// </summary>
+        /// <returns></returns>
+        static public Square Show()
+        {
+            string name = "квадрат";
+            Console.Write("Введите длину всех сторон: ");
+            int side1 = Convert.ToInt32(Console.ReadLine());
+            return new Square(name, side1);
+        }
     }
 }
